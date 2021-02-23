@@ -1,0 +1,27 @@
+1_ Inicio
+2_ Funcion principal
+3_ 	k, i[0, n]
+4_ 	residuo, i[0, n]
+5_ 	Escribir "Ingrese el valor que desee descomponer"
+6_ 	Leer k
+7_ 	j, i[0, n] <-- 0
+8_ 	k1, i[0, n] <-- k
+9_	mensaje, x(200)[{1-9},{a-z},{A-Z}, {/}]
+10_	mensaje <-- obtenerResiuduo(k1, j)
+11_	preMensaje(mensaje)	
+12_ Fin funcion principal
+13_ Funcion obtenerResiuduo(i, k1, i, j)
+14_ 	cadena, x(200)[{1-9},{a-z},{A-Z}, {/}]
+15_	Mientras k1 > 0 emtonces
+16_		residuo <-- k1 MOD 10	
+17_		cadena <-- cadena +""+ residuo "*10 elevado a 
+		la potencia "+j
+18_		k1 <-- k1/ 10
+19_		j <-- j + 1
+20_ 	Fin Mientras
+21_	return cadena
+22_ Fin funcion obtenerResiuduo	
+23_ Funcion preMensaje(mensaje)
+24_	Escribir mensaje
+25_ Fin funcion preMensaje
+26_ Fin
